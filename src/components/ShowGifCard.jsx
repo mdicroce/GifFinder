@@ -2,7 +2,6 @@ import {} from "react";
 import { Link } from "react-router-dom";
 
 export default function ShowGifCard(props) {
-  console.log("hola");
   return (
     <div className="ListOfGifs-item">
       <Link to={`/gif/${props.id}`}>

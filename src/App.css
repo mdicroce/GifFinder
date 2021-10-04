@@ -21,6 +21,15 @@
   display: flex;
   flex-wrap: wrap;
 }
+.link {
+  color: wheat;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  text-decoration: none;
+  display: inline;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
 
 button {
   font-size: calc(10px + 2vmin);
@@ -32,4 +41,17 @@ figcaption {
   font: italic smaller sans-serif;
   padding: 3px;
   text-align: center;
+}
+li {
+  list-style: none;
+}
+
+.trendingLinks {
+  display: flex;
+  flex-direction: row;
+
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem auto;
 }

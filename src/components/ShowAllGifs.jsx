@@ -19,5 +19,9 @@ export default function ShowAllGifs(props) {
       );
     }
   }, [props.gifs]);
-  return <div className="ShowAllGifs">{showGif}</div>;
+  return (
+    <div>
+      <div className="ShowAllGifs">{showGif}</div>
+    </div>
+  );
 }

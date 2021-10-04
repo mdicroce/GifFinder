@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { searchGifService } from "../services/searchGif";
+import { GifContext } from "../context/GifsContext";
 
 export default function useGif(keyword = null) {
-  const [gifs, setGifs] = useState([]);
+  const { gifs, setGifs } = useContext(GifContext);
   const [loading, setLoading] = useState(false);
   React.useEffect(() => {
     setLoading(true);

@@ -7,6 +7,11 @@ import Spinner from "../components/spinner/Spinner";
 export const GifSearchPage = (params) => {
   const { keyword } = useParams();
   const { gifs, loading } = useGif(keyword);
-  console.log(loading);
-  return <div>{loading ? <Spinner /> : <ShowAllGifs gifs={gifs} />}</div>;
+
+  return (
+    <div>
+      <h2>{decodeURI(keyword)}</h2>
+      {loading ? <Spinner /> : <ShowAllGifs gifs={gifs} />}
+    </div>
+  );
 };
